@@ -49,9 +49,9 @@ export function Forgot_Password() {
       navigate("/");
     }
   };
-  // useEffect(() => {
-  //   userValid();
-  // }, []);
+  useEffect(() => {
+    userValid();
+  }, []);
   const { handleSubmit, handleChange, handleBlur, values, touched, errors } =
     useFormik({
       initialValues: {

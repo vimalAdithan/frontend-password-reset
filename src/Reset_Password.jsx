@@ -17,14 +17,15 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 export function Reset_Password() {
   const [open, setOpen] = React.useState(false);
+  const [on, setOn] = React.useState(false);
   const HandleClick = () => {
-    setOpen(true);
+    setOn(true);
   };
   const HandleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
-    setOpen(false);
+    setOn(false);
   };
 
   const handleClick = () => {
@@ -87,7 +88,7 @@ export function Reset_Password() {
             Check email for reset link
           </Alert>
         </Snackbar>
-        <Snackbar open={open} autoHideDuration={5000} onClose={HandleClose}>
+        <Snackbar open={on} autoHideDuration={5000} onClose={HandleClose}>
           <Alert onClose={HandleClose} severity="error" sx={{ width: "100%" }}>
             Enter a valid EmailId
           </Alert>

@@ -56,7 +56,7 @@ export function Reset_Password() {
         } else {
           handleClick({
             severity: "error",
-            content: "EmailId is does not exist",
+            content: "EmailId does not exist",
           });
         }
       },

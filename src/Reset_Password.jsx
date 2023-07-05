@@ -44,6 +44,7 @@ export function Reset_Password() {
             method: "POST",
             body: JSON.stringify({
               username: e.userid,
+              link:"https://wonderful-yeot-025b0d.netlify.app"
             }),
             headers: { "Content-Type": "application/json" },
           }
